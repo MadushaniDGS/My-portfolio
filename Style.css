@@ -13,7 +13,7 @@
     --bg-color:#111111;
     --second-bg-color:#15151515;
     --text-color:white;
-    --main-color:#60eee7;
+    --main-color:#4454e0;
 }
 
 html{
@@ -212,6 +212,236 @@ span{
     animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
 }
 
+.container {
+    background: #fff;
+    padding: 30px;
+    font-family: monospace;
+    width: 800px;
+    box-shadow: 20px 20px 50px #564d9eee;
+    
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   }
+
+.head {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.head h1{
+    color: #000;
+    font-weight: 50px;
+    font-size: 30px;
+    font-family: popins;
+}
+
+.text {
+    color: #000;
+    margin: 10px 0;
+    font-family: sans-serif;
+    font-size: 1.5em;
+}
+
+.content h2{
+    color: #000;
+    margin: 10px 0;
+    font-family: sans-serif;
+    font-size: 1.5em;
+}
+
+.commentbox {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-position: center;
+    
+}
+
+.commentbox > img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    /* float: left; */
+    margin-right: 20px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.content {
+    width: 100%;
+}
+.head h3{
+    color: #000;
+}
+
+.user {
+    border: none;
+    outline: none;
+    margin: 5px 0;
+    color: #948e8e;
+    margin-left: 20px;
+    padding: 10px;
+}
+
+.commentinput > input {
+    border: none;
+    padding: 10px;
+    padding-left: 0;
+    outline: none;
+    border-bottom: 2px solid rgb(19, 19, 180);
+    margin-bottom: 10px;
+    width: 95%;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #808080;
+}
+
+.buttons > button {
+    padding: 5px 10px;
+    background: lightgrey;
+    color: #808080;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.buttons > button.abled {
+    background: blue;
+    color: #fff;
+}
+
+.policy {
+    margin: 20px 0;
+    font-size: 0.8em;
+    font-family: Arial, sans-serif;
+    color: #808080;
+}
+
+.policy a {
+    text-decoration: none;
+    color: blue;
+}
+
+.notify {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.notify > input {
+    margin-right: 5px;
+    border: 2px solid #808080;
+}
+
+.parents {
+    font-family: Arial, sans-serif;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.parents h1 {
+    font-size: 0.9em;
+}
+
+.parents p {
+    margin: 10px 0;
+    font-size: 0.9em;
+}
+
+.parents > img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.engagements {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.engagements img {
+    width: 20px;
+
+}
+
+.engagements img:nth-child(1) {
+    margin-right: 10px;
+    width: 25px;
+}
+
+.date {
+    color: #808080;
+    font-size: 0.8em;
+}
+    
+.comment {
+    width: 400px;
+    background: #fff;
+    padding: 10px;
+    border-left: 3px solid purple;
+}
+
+.comment div {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.comment div input {
+    width: 100%;
+    outline: none;
+    border: none;
+}
+
+.comment div textarea {
+    width: 100%;
+    outline: none;
+    border: none;
+    resize: none;
+    font-family: Arial, sans-serif;
+}
+
+.comment div:nth-child(2) {
+    margin-bottom: 0;
+}
+
+.comment div:last-child {
+    margin: 0;
+    text-align: right;
+}
+
+.comment div button {
+    padding: 5px 15px;
+    background: purple;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.posts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 50px;
+}
+
+.parent {
+    background: #fff;
+    padding: 10px;
+    width: 400px;
+} 
 @keyframes cursor {
     to{
         border-left: 2px solid var(--main-color);
@@ -226,11 +456,11 @@ span{
     }
     21%,
     40%{
-        content: 'Graphic Designer';
+        content: 'Volunteer';
     }
     41%,
     60%{
-        content: "Mobile Developer";
+        content: "Gamer";
     }
     61%,
     80%{
@@ -238,7 +468,7 @@ span{
     }
     81%,
     100%{
-        content: "UI/UX Designer";
+        content: "Nature Lover";
     }
 }
 
@@ -285,10 +515,10 @@ span{
 
 .about-img img{
     position: relative;
-    width: 20vw;
+    width: 15vw;
     border-radius: 50%;
     box-shadow: 0 0 25px var(--main-color);
-    top: 1rem;
+    top: 3rem;
     cursor: pointer;
     transition: 0.4s ease-in-out;
 }
@@ -409,7 +639,7 @@ span{
 
 .contact h2{
     margin-bottom: 3rem;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .contact form{
@@ -577,7 +807,7 @@ span{
     
     .home-img img{
         width: 56vw;
-        margin-top: -2rem;
+        margin-top: -5rem;
     }
     .about{
         flex-direction: column-reverse;
