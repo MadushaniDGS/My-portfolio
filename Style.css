@@ -218,6 +218,8 @@ span{
     font-family: monospace;
     width: 800px;
     box-shadow: 20px 20px 50px #564d9eee;
+     color: #000;
+    font-size: 20px;
     
 }
 .center {
